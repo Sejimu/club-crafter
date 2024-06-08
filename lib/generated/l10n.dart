@@ -209,6 +209,296 @@ class S {
       args: [],
     );
   }
+
+  /// `Create an Account`
+  String get createAnAccount {
+    return Intl.message(
+      'Create an Account',
+      name: 'createAnAccount',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Please fill this detail to create an account`
+  String get pleaseFillThisDetailToCreateAnAccount {
+    return Intl.message(
+      'Please fill this detail to create an account',
+      name: 'pleaseFillThisDetailToCreateAnAccount',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Enter email`
+  String get enterEmail {
+    return Intl.message(
+      'Enter email',
+      name: 'enterEmail',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Sign up with Facebool`
+  String get signUpWithFacebool {
+    return Intl.message(
+      'Sign up with Facebool',
+      name: 'signUpWithFacebool',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Sign up with Google`
+  String get signUpWithGoogle {
+    return Intl.message(
+      'Sign up with Google',
+      name: 'signUpWithGoogle',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Already have an account?`
+  String get alreadyHaveAnAccount {
+    return Intl.message(
+      'Already have an account?',
+      name: 'alreadyHaveAnAccount',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Create username`
+  String get createUsername {
+    return Intl.message(
+      'Create username',
+      name: 'createUsername',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Photo profile can be changed at any time`
+  String get photoProfileCanBeChangedAtAnyTime {
+    return Intl.message(
+      'Photo profile can be changed at any time',
+      name: 'photoProfileCanBeChangedAtAnyTime',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Choose your photo profile`
+  String get chooseYourPhotoProfile {
+    return Intl.message(
+      'Choose your photo profile',
+      name: 'chooseYourPhotoProfile',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Username can be changed at any time`
+  String get usernameCanBeChangedAtAnyTime {
+    return Intl.message(
+      'Username can be changed at any time',
+      name: 'usernameCanBeChangedAtAnyTime',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Choose your favorite event`
+  String get chooseYourFavoriteEvent {
+    return Intl.message(
+      'Choose your favorite event',
+      name: 'chooseYourFavoriteEvent',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Get personalized event recomendation.`
+  String get getPersonalizedEventRecomendation {
+    return Intl.message(
+      'Get personalized event recomendation.',
+      name: 'getPersonalizedEventRecomendation',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Finish`
+  String get finish {
+    return Intl.message(
+      'Finish',
+      name: 'finish',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Business`
+  String get business {
+    return Intl.message(
+      'Business',
+      name: 'business',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Community`
+  String get community {
+    return Intl.message(
+      'Community',
+      name: 'community',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Music & Entertaiment`
+  String get musicEntertaiment {
+    return Intl.message(
+      'Music & Entertaiment',
+      name: 'musicEntertaiment',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Health`
+  String get health {
+    return Intl.message(
+      'Health',
+      name: 'health',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Food & drink`
+  String get foodDrink {
+    return Intl.message(
+      'Food & drink',
+      name: 'foodDrink',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Family & Education`
+  String get familyEducation {
+    return Intl.message(
+      'Family & Education',
+      name: 'familyEducation',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Sport`
+  String get sport {
+    return Intl.message(
+      'Sport',
+      name: 'sport',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Fashion`
+  String get fashion {
+    return Intl.message(
+      'Fashion',
+      name: 'fashion',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Film & Media`
+  String get filmMedia {
+    return Intl.message(
+      'Film & Media',
+      name: 'filmMedia',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Home & Lifestyle`
+  String get homeLifestyle {
+    return Intl.message(
+      'Home & Lifestyle',
+      name: 'homeLifestyle',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Design`
+  String get design {
+    return Intl.message(
+      'Design',
+      name: 'design',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Gaming`
+  String get gaming {
+    return Intl.message(
+      'Gaming',
+      name: 'gaming',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Science & Tech`
+  String get scienceTech {
+    return Intl.message(
+      'Science & Tech',
+      name: 'scienceTech',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `School & Education`
+  String get schoolEducation {
+    return Intl.message(
+      'School & Education',
+      name: 'schoolEducation',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Holiday`
+  String get holiday {
+    return Intl.message(
+      'Holiday',
+      name: 'holiday',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Travel`
+  String get travel {
+    return Intl.message(
+      'Travel',
+      name: 'travel',
+      desc: '',
+      args: [],
+    );
+  }
 }
 
 class AppLocalizationDelegate extends LocalizationsDelegate<S> {

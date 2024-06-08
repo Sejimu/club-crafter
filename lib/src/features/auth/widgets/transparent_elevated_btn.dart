@@ -26,7 +26,7 @@ class TransparentElevatedBtn extends StatelessWidget {
           style: ElevatedButton.styleFrom(
               backgroundColor: Colors.transparent,
               elevation: 0,
-              padding: REdgeInsets.symmetric(horizontal: 65, vertical: 16)),
+              padding: REdgeInsets.symmetric(vertical: 16)),
           child: Row(
             mainAxisSize: MainAxisSize.max,
             mainAxisAlignment: MainAxisAlignment.center,

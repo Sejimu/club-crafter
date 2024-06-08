@@ -22,16 +22,44 @@ class MessageLookup extends MessageLookupByLibrary {
 
   final messages = _notInlinedMessages(_notInlinedMessages);
   static Map<String, Function> _notInlinedMessages(_) => <String, Function>{
+        "alreadyHaveAnAccount":
+            MessageLookupByLibrary.simpleMessage("Already have an account?"),
+        "business": MessageLookupByLibrary.simpleMessage("Business"),
+        "chooseYourFavoriteEvent":
+            MessageLookupByLibrary.simpleMessage("Choose your favorite event"),
+        "chooseYourPhotoProfile":
+            MessageLookupByLibrary.simpleMessage("Choose your photo profile"),
+        "community": MessageLookupByLibrary.simpleMessage("Community"),
+        "createAnAccount":
+            MessageLookupByLibrary.simpleMessage("Create an Account"),
+        "createUsername":
+            MessageLookupByLibrary.simpleMessage("Create username"),
+        "design": MessageLookupByLibrary.simpleMessage("Design"),
         "dontHaveAnAccount":
             MessageLookupByLibrary.simpleMessage("Don’t have an account?"),
+        "enterEmail": MessageLookupByLibrary.simpleMessage("Enter email"),
         "enterPassword": MessageLookupByLibrary.simpleMessage("Enter password"),
         "enterUsername": MessageLookupByLibrary.simpleMessage("Enter Username"),
+        "familyEducation":
+            MessageLookupByLibrary.simpleMessage("Family & Education"),
+        "fashion": MessageLookupByLibrary.simpleMessage("Fashion"),
+        "filmMedia": MessageLookupByLibrary.simpleMessage("Film & Media"),
         "findYourFavouriteEventsHere": MessageLookupByLibrary.simpleMessage(
             "Find your favourite events here"),
         "findYourNearbyEventHere":
             MessageLookupByLibrary.simpleMessage("Find your nearby event here"),
+        "finish": MessageLookupByLibrary.simpleMessage("Finish"),
+        "foodDrink": MessageLookupByLibrary.simpleMessage("Food & drink"),
         "forgotPassword":
             MessageLookupByLibrary.simpleMessage("Forgot Password ?"),
+        "gaming": MessageLookupByLibrary.simpleMessage("Gaming"),
+        "getPersonalizedEventRecomendation":
+            MessageLookupByLibrary.simpleMessage(
+                "Get personalized event recomendation."),
+        "health": MessageLookupByLibrary.simpleMessage("Health"),
+        "holiday": MessageLookupByLibrary.simpleMessage("Holiday"),
+        "homeLifestyle":
+            MessageLookupByLibrary.simpleMessage("Home & Lifestyle"),
         "login": MessageLookupByLibrary.simpleMessage("Login"),
         "loginWithFacebook":
             MessageLookupByLibrary.simpleMessage("Login with Facebook"),
@@ -40,14 +68,33 @@ class MessageLookup extends MessageLookupByLibrary {
         "loremIpsumDolorSitAmetConsecteturAdipiscingElit":
             MessageLookupByLibrary.simpleMessage(
                 "Lorem ipsum dolor sit amet, consectetur adipiscing elit."),
+        "musicEntertaiment":
+            MessageLookupByLibrary.simpleMessage("Music & Entertaiment"),
         "next": MessageLookupByLibrary.simpleMessage("Next"),
         "or": MessageLookupByLibrary.simpleMessage("OR"),
+        "photoProfileCanBeChangedAtAnyTime":
+            MessageLookupByLibrary.simpleMessage(
+                "Photo profile can be changed at any time"),
+        "pleaseFillThisDetailToCreateAnAccount":
+            MessageLookupByLibrary.simpleMessage(
+                "Please fill this detail to create an account"),
+        "schoolEducation":
+            MessageLookupByLibrary.simpleMessage("School & Education"),
+        "scienceTech": MessageLookupByLibrary.simpleMessage("Science & Tech"),
+        "signUpWithFacebool":
+            MessageLookupByLibrary.simpleMessage("Sign up with Facebool"),
+        "signUpWithGoogle":
+            MessageLookupByLibrary.simpleMessage("Sign up with Google"),
         "signup": MessageLookupByLibrary.simpleMessage("Signup"),
+        "sport": MessageLookupByLibrary.simpleMessage("Sport"),
+        "travel": MessageLookupByLibrary.simpleMessage("Travel"),
         "updateYourUpcomingEventHere": MessageLookupByLibrary.simpleMessage(
             "Update your upcoming event here"),
         "useCredentialsToAceesYourAccount":
             MessageLookupByLibrary.simpleMessage(
                 "Use Credentials to acees your account"),
+        "usernameCanBeChangedAtAnyTime": MessageLookupByLibrary.simpleMessage(
+            "Username can be changed at any time"),
         "welcomeBack": MessageLookupByLibrary.simpleMessage("Welcome Back!")
       };
 }
