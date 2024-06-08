@@ -4,5 +4,15 @@
   "next": "Next",
   "findYourNearbyEventHere": "Find your nearby event here",
   "updateYourUpcomingEventHere": "Update your upcoming event here",
-  "continue": "Continue"
+  "welcomeBack": "Welcome Back!",
+  "useCredentialsToAceesYourAccount": "Use Credentials to acees your account",
+  "enterUsername": "Enter Username",
+  "enterPassword": "Enter password",
+  "forgotPassword": "Forgot Password ?",
+  "login": "Login",
+  "or": "OR",
+  "loginWithFacebook": "Login with Facebook",
+  "loginWithGoogle": "Login with Google",
+  "dontHaveAnAccount": "Don’t have an account?",
+  "signup": "Signup"
 }

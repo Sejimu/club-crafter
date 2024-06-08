@@ -1,5 +1,6 @@
 // ignore_for_file: public_member_api_docs, sort_constructors_first
 import 'package:auto_route/auto_route.dart';
+import 'package:clubcrafter/src/config/routes/app_routes.gr.dart';
 import 'package:clubcrafter/src/utils/theme/app_colors.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
@@ -107,7 +108,9 @@ class _OnboardingPageState extends State<OnboardingPage> {
             padding: REdgeInsets.symmetric(horizontal: 20),
             child: CElevatedButton(
               onPressed: () {
-                if (_currentIndex == content.length) {}
+                if (_currentIndex == content.length - 1) {
+                  _goToSignIn();
+                }
                 _controller.nextPage(
                     duration: const Duration(milliseconds: 400),
                     curve: Curves.easeIn);
@@ -122,6 +125,8 @@ class _OnboardingPageState extends State<OnboardingPage> {
       ),
     );
   }
+
+  void _goToSignIn() => context.router.replace(const SignInRoute());
 }
 
 List<String> imagesOne = [

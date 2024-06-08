@@ -5,6 +5,12 @@ import 'package:clubcrafter/src/utils/resources/resources.dart';
 
 void main() {
   test('images assets test', () {
+    expect(File(Images.group49).existsSync(), isTrue);
+    expect(File(Images.bg).existsSync(), isTrue);
+    expect(File(Images.facebook).existsSync(), isTrue);
+    expect(File(Images.icon).existsSync(), isTrue);
+    expect(File(Images.lock).existsSync(), isTrue);
+    expect(File(Images.logo).existsSync(), isTrue);
     expect(File(Images.rc).existsSync(), isTrue);
     expect(File(Images.rec).existsSync(), isTrue);
     expect(File(Images.rectangle).existsSync(), isTrue);
@@ -18,5 +24,7 @@ void main() {
     expect(File(Images.secondThree).existsSync(), isTrue);
     expect(File(Images.secondTwo).existsSync(), isTrue);
     expect(File(Images.splash).existsSync(), isTrue);
+    expect(File(Images.union).existsSync(), isTrue);
+    expect(File(Images.vis).existsSync(), isTrue);
   });
 }

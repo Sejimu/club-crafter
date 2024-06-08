@@ -22,15 +22,32 @@ class MessageLookup extends MessageLookupByLibrary {
 
   final messages = _notInlinedMessages(_notInlinedMessages);
   static Map<String, Function> _notInlinedMessages(_) => <String, Function>{
+        "dontHaveAnAccount":
+            MessageLookupByLibrary.simpleMessage("Don’t have an account?"),
+        "enterPassword": MessageLookupByLibrary.simpleMessage("Enter password"),
+        "enterUsername": MessageLookupByLibrary.simpleMessage("Enter Username"),
         "findYourFavouriteEventsHere": MessageLookupByLibrary.simpleMessage(
             "Find your favourite events here"),
         "findYourNearbyEventHere":
             MessageLookupByLibrary.simpleMessage("Find your nearby event here"),
+        "forgotPassword":
+            MessageLookupByLibrary.simpleMessage("Forgot Password ?"),
+        "login": MessageLookupByLibrary.simpleMessage("Login"),
+        "loginWithFacebook":
+            MessageLookupByLibrary.simpleMessage("Login with Facebook"),
+        "loginWithGoogle":
+            MessageLookupByLibrary.simpleMessage("Login with Google"),
         "loremIpsumDolorSitAmetConsecteturAdipiscingElit":
             MessageLookupByLibrary.simpleMessage(
                 "Lorem ipsum dolor sit amet, consectetur adipiscing elit."),
         "next": MessageLookupByLibrary.simpleMessage("Next"),
+        "or": MessageLookupByLibrary.simpleMessage("OR"),
+        "signup": MessageLookupByLibrary.simpleMessage("Signup"),
         "updateYourUpcomingEventHere": MessageLookupByLibrary.simpleMessage(
-            "Update your upcoming event here")
+            "Update your upcoming event here"),
+        "useCredentialsToAceesYourAccount":
+            MessageLookupByLibrary.simpleMessage(
+                "Use Credentials to acees your account"),
+        "welcomeBack": MessageLookupByLibrary.simpleMessage("Welcome Back!")
       };
 }
