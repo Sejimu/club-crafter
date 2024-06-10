@@ -74,20 +74,21 @@ class _IntroPageState extends State<IntroPage> {
             SizedBox(
                 height: context.height / 2 * 1.4,
                 child: PageView.builder(
+                    physics: const NeverScrollableScrollPhysics(),
                     onPageChanged: (value) {
                       setState(() {
                         _currentStep = value;
                       });
                     },
                     controller: _controller,
-                    itemCount: IntroContent._introContent(context).length,
+                    itemCount: _IntroContent._introContent(context).length,
                     itemBuilder: (_, index) => SingleChildScrollView(
-                        child: IntroContent._introContent(context)[index]))),
+                        child: _IntroContent._introContent(context)[index]))),
             const Spacer(),
             CElevatedButton(
                 onPressed: () {
                   if (_currentStep + 1 ==
-                      IntroContent._introContent(context).length - 1) {
+                      _IntroContent._introContent(context).length) {
                     _goToHome();
                   }
                   _controller.nextPage(
@@ -95,7 +96,7 @@ class _IntroPageState extends State<IntroPage> {
                       curve: Curves.easeOutBack);
                 },
                 text: _currentStep ==
-                        IntroContent._introContent(context).length - 1
+                        _IntroContent._introContent(context).length - 1
                     ? S.of(context).finish
                     : S.of(context).next)
           ],
@@ -107,7 +108,7 @@ class _IntroPageState extends State<IntroPage> {
   void _goToHome() => context.router.replace(const HomeRoute());
 }
 
-class IntroContent {
+class _IntroContent {
   static List<Widget> _introContent(BuildContext context) => [
         Column(
           crossAxisAlignment: CrossAxisAlignment.start,

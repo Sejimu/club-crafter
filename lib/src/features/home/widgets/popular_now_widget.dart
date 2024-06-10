@@ -1,3 +1,5 @@
+import 'package:auto_route/auto_route.dart';
+import 'package:clubcrafter/src/config/routes/app_routes.gr.dart';
 import 'package:clubcrafter/src/utils/extensions/extensions.dart';
 import 'package:clubcrafter/src/utils/resources/resources.dart';
 import 'package:clubcrafter/src/utils/theme/app_colors.dart';
@@ -14,60 +16,66 @@ class PopularNowWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return DecoratedBox(
-      decoration: BoxDecoration(
-          border: Border.all(color: AppColors.grey.withOpacity(0.2)),
-          borderRadius: BorderRadius.circular(_paddingSmall).r),
-      child: Column(
-        crossAxisAlignment: CrossAxisAlignment.start,
-        children: [
-          Image.asset(
-            Images.popular,
-            width: 300.w,
-            height: 180,
-            fit: BoxFit.fill,
-          ),
-          _paddingMedium.verticalSpace,
-          Padding(
-            padding: REdgeInsets.all(_paddingMedium),
-            child: Column(
-              crossAxisAlignment: CrossAxisAlignment.start,
-              children: [
-                Text(
-                  "Going to a Rock Concert",
-                  style: context.textTheme.titleMedium!
-                      .copyWith(color: AppColors.black),
-                ),
-                _paddingSmall.verticalSpace,
-                Text(
-                  "THU 26 May, 09:00 - FRI 27 May, 10:00",
-                  style: context.textTheme.bodySmall!
-                      .copyWith(color: AppColors.black),
-                ),
-                _paddingSmall.verticalSpace,
-                Row(
-                  children: [
-                    DecoratedBox(
-                      decoration: BoxDecoration(
-                          borderRadius: BorderRadius.circular(5).r,
-                          color: AppColors.hotPink.withOpacity(0.1)),
-                      child: Padding(
-                        padding:
-                            REdgeInsets.symmetric(horizontal: 8, vertical: 4.5),
-                        child: Text(
-                          "\$30.00",
-                          style: context.textTheme.labelMedium!
-                              .copyWith(color: AppColors.hotPink),
-                        ),
-                      ),
-                    )
-                  ],
-                )
-              ],
+    return InkWell(
+      onTap: () => _goToEventDetail(context),
+      child: DecoratedBox(
+        decoration: BoxDecoration(
+            border: Border.all(color: AppColors.grey.withOpacity(0.2)),
+            borderRadius: BorderRadius.circular(_paddingSmall).r),
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            Image.asset(
+              Images.popular,
+              width: 300.w,
+              height: 180,
+              fit: BoxFit.fill,
             ),
-          )
-        ],
+            _paddingMedium.verticalSpace,
+            Padding(
+              padding: REdgeInsets.all(_paddingMedium),
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Text(
+                    "Going to a Rock Concert",
+                    style: context.textTheme.titleMedium!
+                        .copyWith(color: AppColors.black),
+                  ),
+                  _paddingSmall.verticalSpace,
+                  Text(
+                    "THU 26 May, 09:00 - FRI 27 May, 10:00",
+                    style: context.textTheme.bodySmall!
+                        .copyWith(color: AppColors.black),
+                  ),
+                  _paddingSmall.verticalSpace,
+                  Row(
+                    children: [
+                      DecoratedBox(
+                        decoration: BoxDecoration(
+                            borderRadius: BorderRadius.circular(5).r,
+                            color: AppColors.hotPink.withOpacity(0.1)),
+                        child: Padding(
+                          padding: REdgeInsets.symmetric(
+                              horizontal: 8, vertical: 4.5),
+                          child: Text(
+                            "\$30.00",
+                            style: context.textTheme.labelMedium!
+                                .copyWith(color: AppColors.hotPink),
+                          ),
+                        ),
+                      )
+                    ],
+                  )
+                ],
+              ),
+            )
+          ],
+        ),
       ),
     );
   }
+
+  void _goToEventDetail(BuildContext context) =>
+      context.pushRoute(const EventDetailRoute());
 }

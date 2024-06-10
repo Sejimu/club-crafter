@@ -5,7 +5,6 @@ import 'package:clubcrafter/src/utils/theme/app_colors.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
-
 const double _paddingUnit = 20;
 
 class SearchHomeField extends StatelessWidget {
@@ -33,6 +32,7 @@ class SearchHomeField extends StatelessWidget {
           ),
           suffixIcon: CIconButton(
             onPressed: () {},
+            icon: Icons.sort_sharp,
           ),
           contentPadding:
               REdgeInsets.symmetric(horizontal: _paddingUnit, vertical: 14),

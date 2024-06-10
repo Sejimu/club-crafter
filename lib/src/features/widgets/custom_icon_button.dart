@@ -4,7 +4,10 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 class CIconButton extends StatelessWidget {
   final VoidCallback onPressed;
-  const CIconButton({super.key, required this.onPressed});
+  final IconData icon;
+  final Color? color;
+  const CIconButton(
+      {super.key, required this.onPressed, required this.icon, this.color});
 
   @override
   Widget build(BuildContext context) {
@@ -14,8 +17,8 @@ class CIconButton extends StatelessWidget {
             padding: EdgeInsets.zero,
             tapTargetSize: MaterialTapTargetSize.shrinkWrap),
         icon: Icon(
-          Icons.sort_sharp,
-          color: AppColors.black,
+          icon,
+          color: color ?? AppColors.black,
           size: 25.h,
         ));
   }

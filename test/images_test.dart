@@ -7,6 +7,7 @@ void main() {
   test('images assets test', () {
     expect(File(Images.group49).existsSync(), isTrue);
     expect(File(Images.bg).existsSync(), isTrue);
+    expect(File(Images.detail).existsSync(), isTrue);
     expect(File(Images.event).existsSync(), isTrue);
     expect(File(Images.facebook).existsSync(), isTrue);
     expect(File(Images.icon).existsSync(), isTrue);

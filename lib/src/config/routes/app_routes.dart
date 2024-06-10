@@ -5,6 +5,16 @@ import 'package:clubcrafter/src/config/routes/app_routes.gr.dart';
 class AppRouter extends $AppRouter {
   @override
   List<AutoRoute> get routes => [
+        // Dashboard
+        CustomRoute(page: Dashboard.page, children: [
+          CustomRoute(
+            page: HomeRoute.page,
+            transitionsBuilder: TransitionsBuilders.fadeIn,
+          ),
+        ]),
+
+        CustomRoute(page: EventDetailRoute.page),
+
         CustomRoute(
             page: OnboardingRoute.page,
             transitionsBuilder: TransitionsBuilders.noTransition),
@@ -21,11 +31,10 @@ class AppRouter extends $AppRouter {
           transitionsBuilder: TransitionsBuilders.fadeIn,
         ),
 
-        // Home
+        // Event detail
         CustomRoute(
+          page: EventDetailRoute.page,
           initial: true,
-          page: HomeRoute.page,
-          transitionsBuilder: TransitionsBuilders.fadeIn,
         )
       ];
 }

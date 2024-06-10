@@ -5,6 +5,7 @@ class Images {
 
   static const String group49 = 'assets/imgs/Group 49.svg';
   static const String bg = 'assets/imgs/bg.svg';
+  static const String detail = 'assets/imgs/detail.jpeg';
   static const String event = 'assets/imgs/event.png';
   static const String facebook = 'assets/imgs/facebook.svg';
   static const String icon = 'assets/imgs/icon.svg';
