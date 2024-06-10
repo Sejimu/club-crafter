@@ -17,12 +17,24 @@ class AppTheme {
             fontSize: 24.sp,
             fontWeight: FontWeight.w700,
             color: AppColors.black),
+        titleMedium: GoogleFonts.poppins(
+            fontSize: 16.sp,
+            fontWeight: FontWeight.w700,
+            color: AppColors.black),
+        titleSmall: GoogleFonts.poppins(
+            fontSize: 14.sp,
+            fontWeight: FontWeight.w700,
+            color: AppColors.black),
         bodySmall: GoogleFonts.poppins(
             fontSize: 14.sp,
             fontWeight: FontWeight.w400,
             color: AppColors.grey),
         bodyMedium: GoogleFonts.poppins(
             fontSize: 16.sp,
+            fontWeight: FontWeight.w400,
+            color: AppColors.white),
+        labelMedium: GoogleFonts.poppins(
+            fontSize: 12.sp,
             fontWeight: FontWeight.w400,
             color: AppColors.white),
       );

@@ -17,8 +17,14 @@ class AppRouter extends $AppRouter {
 
         // Intro
         CustomRoute(
-          initial: true,
           page: IntroRoute.page,
+          transitionsBuilder: TransitionsBuilders.fadeIn,
+        ),
+
+        // Home
+        CustomRoute(
+          initial: true,
+          page: HomeRoute.page,
           transitionsBuilder: TransitionsBuilders.fadeIn,
         )
       ];

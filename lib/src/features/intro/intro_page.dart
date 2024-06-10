@@ -1,9 +1,11 @@
 import 'package:auto_route/auto_route.dart';
 import 'package:clubcrafter/generated/l10n.dart';
+import 'package:clubcrafter/src/config/routes/app_routes.gr.dart';
 import 'package:clubcrafter/src/features/intro/widgets/add_photo_btn.dart';
 import 'package:clubcrafter/src/features/intro/widgets/event_btn.dart';
 import 'package:clubcrafter/src/features/widgets/custom_elevated_btn.dart';
 import 'package:clubcrafter/src/utils/extensions/extensions.dart';
+import 'package:clubcrafter/src/utils/models/event.dart';
 import 'package:clubcrafter/src/utils/resources/resources.dart';
 import 'package:clubcrafter/src/utils/theme/app_colors.dart';
 import 'package:flutter/cupertino.dart';
@@ -29,7 +31,7 @@ class _IntroPageState extends State<IntroPage> {
   @override
   void initState() {
     super.initState();
-    _controller = PageController(initialPage: 2);
+    _controller = PageController(initialPage: 0);
   }
 
   @override
@@ -38,12 +40,20 @@ class _IntroPageState extends State<IntroPage> {
     _controller.dispose();
   }
 
-  int _currentStep = 2;
+  int _currentStep = 0;
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(),
+      appBar: AppBar(
+        automaticallyImplyLeading: true,
+        leading: IconButton(
+            onPressed: () {},
+            icon: const Icon(
+              CupertinoIcons.arrow_left,
+              color: AppColors.black,
+            )),
+      ),
       body: SafeArea(
           child: Padding(
         padding: REdgeInsets.symmetric(horizontal: _paddingUnit),
@@ -76,6 +86,10 @@ class _IntroPageState extends State<IntroPage> {
             const Spacer(),
             CElevatedButton(
                 onPressed: () {
+                  if (_currentStep + 1 ==
+                      IntroContent._introContent(context).length - 1) {
+                    _goToHome();
+                  }
                   _controller.nextPage(
                       duration: const Duration(milliseconds: 450),
                       curve: Curves.easeOutBack);
@@ -89,6 +103,8 @@ class _IntroPageState extends State<IntroPage> {
       )),
     );
   }
+
+  void _goToHome() => context.router.replace(const HomeRoute());
 }
 
 class IntroContent {
@@ -223,30 +239,5 @@ class IntroContent {
                     .toList())
           ],
         ),
-      ];
-}
-
-class Events {
-  final String emoji;
-  final String text;
-  Events({required this.emoji, required this.text});
-
-  static List<Events> getEvent(BuildContext context) => [
-        Events(emoji: "💼", text: S.of(context).business),
-        Events(emoji: "🙌", text: S.of(context).community),
-        Events(emoji: "🎙", text: S.of(context).musicEntertaiment),
-        Events(emoji: "💉", text: S.of(context).health),
-        Events(emoji: "🍟", text: S.of(context).foodDrink),
-        Events(emoji: "👪", text: S.of(context).familyEducation),
-        Events(emoji: "⚽", text: S.of(context).sport),
-        Events(emoji: "👠", text: S.of(context).fashion),
-        Events(emoji: "🎞", text: S.of(context).filmMedia),
-        Events(emoji: "🏡", text: S.of(context).homeLifestyle),
-        Events(emoji: "🎨", text: S.of(context).design),
-        Events(emoji: "🎮", text: S.of(context).gaming),
-        Events(emoji: "🔬", text: S.of(context).scienceTech),
-        Events(emoji: "📚", text: S.of(context).schoolEducation),
-        Events(emoji: "☀️", text: S.of(context).holiday),
-        Events(emoji: "✈", text: S.of(context).travel),
       ];
 }

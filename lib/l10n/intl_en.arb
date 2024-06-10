@@ -43,5 +43,12 @@
   "scienceTech": "Science & Tech",
   "schoolEducation": "School & Education",
   "holiday": "Holiday",
-  "travel": "Travel"
+  "travel": "Travel",
+  "location": "Location",
+  "search": "Search",
+  "upcomingEvents": "Upcoming Events",
+  "seeAll": "See All",
+  "join": "Join",
+  "popularNow": "Popular Now",
+  "recommendationsForYou": "Recommendations for you"
 }

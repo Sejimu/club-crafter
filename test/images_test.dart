@@ -7,12 +7,15 @@ void main() {
   test('images assets test', () {
     expect(File(Images.group49).existsSync(), isTrue);
     expect(File(Images.bg).existsSync(), isTrue);
+    expect(File(Images.event).existsSync(), isTrue);
     expect(File(Images.facebook).existsSync(), isTrue);
     expect(File(Images.icon).existsSync(), isTrue);
     expect(File(Images.lock).existsSync(), isTrue);
     expect(File(Images.logo).existsSync(), isTrue);
+    expect(File(Images.popular).existsSync(), isTrue);
     expect(File(Images.rc).existsSync(), isTrue);
     expect(File(Images.rec).existsSync(), isTrue);
+    expect(File(Images.recom).existsSync(), isTrue);
     expect(File(Images.rectangle).existsSync(), isTrue);
     expect(File(Images.rectangleOne).existsSync(), isTrue);
     expect(File(Images.rectangleTwo).existsSync(), isTrue);

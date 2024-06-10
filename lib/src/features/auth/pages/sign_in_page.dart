@@ -88,7 +88,11 @@ class _SignInPageState extends State<SignInPage> {
               ),
             ),
             30.verticalSpace,
-            CElevatedButton(onPressed: () {}, text: S.of(context).login),
+            CElevatedButton(
+                onPressed: () {
+                  _goToIntro();
+                },
+                text: S.of(context).login),
             10.verticalSpace,
             Row(
               children: [
@@ -152,4 +156,6 @@ class _SignInPageState extends State<SignInPage> {
   }
 
   void _goToSignUp() => context.router.replace(const SignUpRoute());
+
+  void _goToIntro() => context.router.push(const IntroRoute());
 }

@@ -15,7 +15,7 @@ class EventBtn extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return InkWell(
+    return GestureDetector(
       onTap: onPressed,
       child: Container(
         margin: REdgeInsets.only(bottom: 16),

@@ -6,8 +6,9 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 class CElevatedButton extends StatelessWidget {
   final VoidCallback onPressed;
   final String text;
+  final double? padding;
   const CElevatedButton(
-      {super.key, required this.onPressed, required this.text});
+      {super.key, required this.onPressed, required this.text, this.padding});
 
   @override
   Widget build(BuildContext context) {
@@ -19,7 +20,7 @@ class CElevatedButton extends StatelessWidget {
       child: ElevatedButton(
           onPressed: onPressed,
           style: ElevatedButton.styleFrom(
-              padding: REdgeInsets.symmetric(vertical: 16),
+              padding: REdgeInsets.symmetric(vertical: padding ?? 16),
               backgroundColor: Colors.transparent,
               elevation: 0),
           child: Text(text, style: context.textTheme.bodyMedium)),

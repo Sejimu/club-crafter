@@ -60,6 +60,8 @@ class MessageLookup extends MessageLookupByLibrary {
         "holiday": MessageLookupByLibrary.simpleMessage("Holiday"),
         "homeLifestyle":
             MessageLookupByLibrary.simpleMessage("Home & Lifestyle"),
+        "join": MessageLookupByLibrary.simpleMessage("Join"),
+        "location": MessageLookupByLibrary.simpleMessage("Location"),
         "login": MessageLookupByLibrary.simpleMessage("Login"),
         "loginWithFacebook":
             MessageLookupByLibrary.simpleMessage("Login with Facebook"),
@@ -78,9 +80,14 @@ class MessageLookup extends MessageLookupByLibrary {
         "pleaseFillThisDetailToCreateAnAccount":
             MessageLookupByLibrary.simpleMessage(
                 "Please fill this detail to create an account"),
+        "popularNow": MessageLookupByLibrary.simpleMessage("Popular Now"),
+        "recommendationsForYou":
+            MessageLookupByLibrary.simpleMessage("Recommendations for you"),
         "schoolEducation":
             MessageLookupByLibrary.simpleMessage("School & Education"),
         "scienceTech": MessageLookupByLibrary.simpleMessage("Science & Tech"),
+        "search": MessageLookupByLibrary.simpleMessage("Search"),
+        "seeAll": MessageLookupByLibrary.simpleMessage("See All"),
         "signUpWithFacebool":
             MessageLookupByLibrary.simpleMessage("Sign up with Facebool"),
         "signUpWithGoogle":
@@ -88,6 +95,8 @@ class MessageLookup extends MessageLookupByLibrary {
         "signup": MessageLookupByLibrary.simpleMessage("Signup"),
         "sport": MessageLookupByLibrary.simpleMessage("Sport"),
         "travel": MessageLookupByLibrary.simpleMessage("Travel"),
+        "upcomingEvents":
+            MessageLookupByLibrary.simpleMessage("Upcoming Events"),
         "updateYourUpcomingEventHere": MessageLookupByLibrary.simpleMessage(
             "Update your upcoming event here"),
         "useCredentialsToAceesYourAccount":
