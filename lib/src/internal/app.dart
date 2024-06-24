@@ -1,6 +1,8 @@
-import 'package:clubcrafter/generated/l10n.dart';
-import 'package:clubcrafter/src/config/routes/app_routes.dart';
-import 'package:clubcrafter/src/utils/theme/theme.dart';
+import 'package:clubcrafter/src/core/utils/constants/app_consts.dart';
+
+import '../../generated/l10n.dart';
+import '../core/config/routes/app_routes.dart';
+import '../core/config/theme/theme.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
@@ -13,6 +15,8 @@ class ClubCrafter extends StatefulWidget {
 }
 
 class _ClubCrafterState extends State<ClubCrafter> {
+  final _appRouter = AppRouter();
+  final appConsts = AppConsts();
   @override
   Widget build(BuildContext context) {
     return ScreenUtilInit(
@@ -28,7 +32,7 @@ class _ClubCrafterState extends State<ClubCrafter> {
         ],
         supportedLocales: S.delegate.supportedLocales,
         debugShowCheckedModeBanner: false,
-        routerConfig: AppRouter().config(),
+        routerConfig: _appRouter.config(),
         title: 'Club Crafter',
         theme: AppTheme.lightTheme(),
         builder: (context, child) => MediaQuery(
