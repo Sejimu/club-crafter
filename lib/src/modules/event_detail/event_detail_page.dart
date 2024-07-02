@@ -1,10 +1,10 @@
 import 'package:auto_route/auto_route.dart';
-import '../../../../../generated/l10n.dart';
-import '../../../widgets/custom_elevated_btn.dart';
-import '../../../widgets/custom_icon_button.dart';
-import '../../../../core/utils/extensions/extensions.dart';
-import '../../../../core/utils/resources/resources.dart';
-import '../../../../core/config/theme/app_colors.dart';
+import '../../../generated/l10n.dart';
+import '../widgets/custom_elevated_btn.dart';
+import '../widgets/custom_icon_button.dart';
+import '../../core/utils/extensions/extensions.dart';
+import '../../core/utils/resources/resources.dart';
+import '../../core/config/theme/app_colors.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
@@ -55,7 +55,7 @@ class EventDetailPage extends StatelessWidget {
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     Text(
-                      S.of(context).about,
+                      S.of(context).eventDetailAbout,
                       style: context.textTheme.titleMedium!
                           .copyWith(color: AppColors.black),
                     ),
@@ -92,12 +92,12 @@ class EventDetailPage extends StatelessWidget {
                     ),
                     10.verticalSpace,
                     Text(
-                      S.of(context).location,
+                      S.of(context).homeLocation,
                       style: context.textTheme.titleMedium!
                           .copyWith(color: AppColors.black),
                     ),
                     80.verticalSpace,
-                    CElevatedButton(onPressed: () {}, text: S.of(context).order)
+                    CElevatedButton(onPressed: () {}, text: S.of(context).buttonOrder)
                   ],
                 ),
               )

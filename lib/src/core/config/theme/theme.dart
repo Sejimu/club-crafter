@@ -7,6 +7,7 @@ class AppTheme {
   static ThemeData lightTheme() => ThemeData(
       appBarTheme: const AppBarTheme(color: AppColors.white, elevation: 0),
       useMaterial3: false,
+      dividerColor: AppColors.grey,
       inputDecorationTheme: InputDecorationTheme(
           enabledBorder: OutlineInputBorder(
               borderRadius: BorderRadius.circular(10).r,

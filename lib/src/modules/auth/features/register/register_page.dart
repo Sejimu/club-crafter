@@ -54,48 +54,48 @@ class _SignUpPageState extends State<SignUpPage> {
               ),
               30.verticalSpace,
               Text(
-                S.of(context).createAnAccount,
+                S.of(context).signUpCreateAnAccount,
                 style: context.textTheme.titleLarge!
                     .copyWith(color: AppColors.black),
               ),
               10.verticalSpace,
               Text(
-                S.of(context).pleaseFillThisDetailToCreateAnAccount,
+                S.of(context).signUpPleaseFillThisDetailToCreateAnAccount,
                 style: context.textTheme.bodySmall!
                     .copyWith(color: AppColors.grey),
               ),
               30.verticalSpace,
               CTextFormField(
                 focusNode: _nodeOne,
-                hintText: S.of(context).enterUsername,
+                hintText: S.of(context).textFieldEnterUsername,
                 controller: _username,
                 textInputAction: TextInputAction.next,
                 textInputType: TextInputType.name,
-                prefixIcon: Images.icon,
+                prefixIcon: Svgs.icon,
                 isVisible: false,
               ),
               20.verticalSpace,
               CTextFormField(
                 focusNode: _nodeThree,
-                hintText: S.of(context).enterEmail,
+                hintText: S.of(context).textFieldEnterEmail,
                 controller: _email,
                 textInputAction: TextInputAction.next,
                 textInputType: TextInputType.emailAddress,
-                prefixIcon: Images.icon,
+                prefixIcon: Svgs.userSquare,
                 isVisible: false,
               ),
               20.verticalSpace,
               CTextFormField(
                 focusNode: _nodeTwo,
-                hintText: S.of(context).enterPassword,
+                hintText: S.of(context).textFieldEnterPassword,
                 controller: _password,
                 textInputAction: TextInputAction.done,
                 textInputType: TextInputType.text,
-                prefixIcon: Images.lock,
+                prefixIcon: Svgs.lock,
                 isVisible: true,
               ),
               30.verticalSpace,
-              CElevatedButton(onPressed: () {}, text: S.of(context).signup),
+              CElevatedButton(onPressed: () {}, text: S.of(context).buttonSignup),
               10.verticalSpace,
               Row(
                 children: [
@@ -108,7 +108,7 @@ class _SignUpPageState extends State<SignUpPage> {
                   Padding(
                     padding: REdgeInsets.symmetric(horizontal: 8),
                     child: Text(
-                      S.of(context).or,
+                      S.of(context).loginOr,
                       style: GoogleFonts.poppins(
                           fontSize: 11.sp,
                           fontWeight: FontWeight.w400,
@@ -126,13 +126,13 @@ class _SignUpPageState extends State<SignUpPage> {
               10.verticalSpace,
               TransparentElevatedBtn(
                 onPressed: () {},
-                icon: Images.facebook,
+                icon: Svgs.facebook,
                 text: S.of(context).signUpWithFacebool,
               ),
               10.verticalSpace,
               TransparentElevatedBtn(
                 onPressed: () {},
-                icon: Images.group49,
+                icon: Svgs.google,
                 text: S.of(context).signUpWithGoogle,
               ),
               20.verticalSpace,
@@ -140,7 +140,7 @@ class _SignUpPageState extends State<SignUpPage> {
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
                   Text(
-                    S.of(context).alreadyHaveAnAccount,
+                    S.of(context).signUpAlreadyHaveAnAccount,
                     style: context.textTheme.bodySmall!
                         .copyWith(color: AppColors.black),
                   ),
@@ -148,7 +148,7 @@ class _SignUpPageState extends State<SignUpPage> {
                       onPressed: () {
                         _goToSignIn();
                       },
-                      text: S.of(context).login,
+                      text: S.of(context).buttonLogin,
                       textColor: AppColors.hotPink)
                 ],
               )

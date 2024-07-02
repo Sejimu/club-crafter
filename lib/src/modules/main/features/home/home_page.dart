@@ -67,7 +67,7 @@ class _HomePageState extends State<HomePage> {
                     mainAxisSize: MainAxisSize.max,
                     children: [
                       Text(
-                        S.of(context).location,
+                        S.of(context).homeLocation,
                         style: context.textTheme.bodyMedium!
                             .copyWith(color: AppColors.black),
                       ),
@@ -125,14 +125,14 @@ class _HomePageState extends State<HomePage> {
                     children: [
                       Expanded(
                         child: Text(
-                          S.of(context).upcomingEvents,
+                          S.of(context).homeUpcomingEvents,
                           style: context.textTheme.titleMedium!
                               .copyWith(color: AppColors.black),
                         ),
                       ),
                       CTextBtn(
                           onPressed: () {},
-                          text: S.of(context).seeAll,
+                          text: S.of(context).buttonSeeAll,
                           textColor: AppColors.hotPink)
                     ],
                   ),
@@ -159,14 +159,14 @@ class _HomePageState extends State<HomePage> {
                     children: [
                       Expanded(
                         child: Text(
-                          S.of(context).popularNow,
+                          S.of(context).homePopularNow,
                           style: context.textTheme.titleMedium!
                               .copyWith(color: AppColors.black),
                         ),
                       ),
                       CTextBtn(
                           onPressed: () {},
-                          text: S.of(context).seeAll,
+                          text: S.of(context).buttonSeeAll,
                           textColor: AppColors.hotPink)
                     ],
                   ),
@@ -186,7 +186,7 @@ class _HomePageState extends State<HomePage> {
                     children: [
                       Expanded(
                         child: Text(
-                          S.of(context).recommendationsForYou,
+                          S.of(context).homeRecommendationsForYou,
                           style: context.textTheme.titleMedium!
                               .copyWith(color: AppColors.black),
                         ),
@@ -195,7 +195,7 @@ class _HomePageState extends State<HomePage> {
                           onPressed: () {
                             context.router.push(const FavouriteRoute());
                           },
-                          text: S.of(context).seeAll,
+                          text: S.of(context).buttonSeeAll,
                           textColor: AppColors.hotPink)
                     ],
                   ),

@@ -24,8 +24,8 @@ class AppRouter extends $AppRouter {
             page: OnboardingRoute.page,
             transitionsBuilder: TransitionsBuilders.noTransition),
         CustomRoute(
-            initial: true,
             page: SignInRoute.page,
+            initial: true, 
             transitionsBuilder: TransitionsBuilders.fadeIn),
         CustomRoute(
             page: SignUpRoute.page,
@@ -36,5 +36,12 @@ class AppRouter extends $AppRouter {
           page: IntroRoute.page,
           transitionsBuilder: TransitionsBuilders.fadeIn,
         ),
+
+        CustomRoute(
+            page: AllTicketsRoute.page,
+            transitionsBuilder: TransitionsBuilders.fadeIn),
+        CustomRoute(
+            page: OrderDetailRoute.page,
+            transitionsBuilder: TransitionsBuilders.fadeIn)
       ];
 }

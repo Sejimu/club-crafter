@@ -4,7 +4,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 abstract class CratButton extends StatelessWidget {
-  final VoidCallback onPressed;
+  final VoidCallback? onPressed;
+
   const CratButton({super.key, required this.onPressed});
 
   @override
@@ -13,12 +14,11 @@ abstract class CratButton extends StatelessWidget {
   }
 }
 
-class CElevatedButton extends StatelessWidget {
-  final VoidCallback onPressed;
+class CElevatedButton extends CratButton {
   final String text;
   final double? padding;
   const CElevatedButton(
-      {super.key, required this.onPressed, required this.text, this.padding});
+      {super.key, required super.onPressed, required this.text, this.padding});
 
   @override
   Widget build(BuildContext context) {

@@ -54,7 +54,7 @@ class UpComingWidget extends StatelessWidget {
                   SizedBox(
                     width: 60.w,
                     child: CElevatedButton(
-                        onPressed: () {}, padding: 8, text: S.of(context).join),
+                        onPressed: () {}, padding: 8, text: S.of(context).buttonJoin),
                   )
                 ],
               )

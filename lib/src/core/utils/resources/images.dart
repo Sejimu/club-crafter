@@ -3,13 +3,8 @@ part of 'resources.dart';
 class Images {
   Images._();
 
-  static const String group49 = 'assets/imgs/Group 49.svg';
-  static const String bg = 'assets/imgs/bg.svg';
   static const String detail = 'assets/imgs/detail.jpeg';
   static const String event = 'assets/imgs/event.png';
-  static const String facebook = 'assets/imgs/facebook.svg';
-  static const String icon = 'assets/imgs/icon.svg';
-  static const String lock = 'assets/imgs/lock.svg';
   static const String logo = 'assets/imgs/logo.png';
   static const String popular = 'assets/imgs/popular.png';
   static const String rc = 'assets/imgs/rc.png';
@@ -26,6 +21,4 @@ class Images {
   static const String secondThree = 'assets/imgs/secondThree.png';
   static const String secondTwo = 'assets/imgs/secondTwo.png';
   static const String splash = 'assets/imgs/splash.png';
-  static const String union = 'assets/imgs/union.svg';
-  static const String vis = 'assets/imgs/vis.svg';
 }

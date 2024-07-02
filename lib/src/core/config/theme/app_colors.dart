@@ -11,5 +11,6 @@ abstract class AppColors {
     ColorExt.fromHex("#F703D0")
   ];
   static Color hotPink = ColorExt.fromHex("#FB0160");
-  
 }
+
+class LightAppColors extends AppColors {}

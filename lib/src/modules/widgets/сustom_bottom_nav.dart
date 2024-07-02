@@ -1,8 +1,8 @@
 import 'package:auto_route/auto_route.dart';
-import '../../core/config/routes/app_routes.gr.dart';
-import '../../core/config/theme/app_colors.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import '../../core/config/routes/app_routes.gr.dart';
+import '../../core/config/theme/app_colors.dart';
 
 @RoutePage()
 class Dashboard extends StatefulWidget {

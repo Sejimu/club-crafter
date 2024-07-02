@@ -19,7 +19,7 @@ class SearchHomeField extends StatelessWidget {
       style: context.textTheme.bodySmall!.copyWith(color: AppColors.black),
       maxLines: 1,
       decoration: InputDecoration(
-          hintText: S.of(context).search,
+          hintText: S.of(context).homeSearch,
           hintStyle: context.textTheme.bodySmall!
               .copyWith(color: AppColors.grey.withOpacity(0.3)),
           prefixIcon: Padding(
