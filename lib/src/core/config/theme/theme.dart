@@ -5,8 +5,9 @@ import 'package:google_fonts/google_fonts.dart';
 
 class AppTheme {
   static ThemeData lightTheme() => ThemeData(
-      appBarTheme: const AppBarTheme(color: AppColors.white, elevation: 0),
+      appBarTheme: AppBarTheme(color: AppColors.white, elevation: 0),
       useMaterial3: false,
+      dividerColor: AppColors.grey,
       inputDecorationTheme: InputDecorationTheme(
           enabledBorder: OutlineInputBorder(
               borderRadius: BorderRadius.circular(10).r,
@@ -14,7 +15,7 @@ class AppTheme {
           focusedBorder: OutlineInputBorder(
               borderRadius: BorderRadius.circular(10).r,
               borderSide: BorderSide(color: AppColors.grey.withOpacity(0.2)))),
-      scaffoldBackgroundColor: const Color.fromARGB(255, 255, 254, 254),
+      scaffoldBackgroundColor: AppColors.white,
       brightness: Brightness.light,
       primaryColor: AppColors.hotPink,
       textTheme: _textTheme());

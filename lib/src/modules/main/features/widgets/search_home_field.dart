@@ -1,5 +1,5 @@
 import '../../../../../generated/l10n.dart';
-import '../../../widgets/custom_icon_button.dart';
+import '../../../widgets/cruft_icon_button.dart';
 import '../../../../core/utils/extensions/extensions.dart';
 import '../../../../core/config/theme/app_colors.dart';
 import 'package:flutter/material.dart';
@@ -19,7 +19,7 @@ class SearchHomeField extends StatelessWidget {
       style: context.textTheme.bodySmall!.copyWith(color: AppColors.black),
       maxLines: 1,
       decoration: InputDecoration(
-          hintText: S.of(context).search,
+          hintText: S.of(context).homeSearch,
           hintStyle: context.textTheme.bodySmall!
               .copyWith(color: AppColors.grey.withOpacity(0.3)),
           prefixIcon: Padding(
@@ -30,7 +30,7 @@ class SearchHomeField extends StatelessWidget {
               size: 25.h,
             ),
           ),
-          suffixIcon: CIconButton(
+          suffixIcon: CruftIconButton(
             onPressed: () {},
             icon: Icons.sort_sharp,
           ),

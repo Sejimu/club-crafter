@@ -1,8 +1,8 @@
 import 'package:auto_route/auto_route.dart';
-import '../../core/config/routes/app_routes.gr.dart';
-import '../../core/config/theme/app_colors.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import '../../../../core/config/routes/app_routes.gr.dart';
+import '../../../../core/config/theme/app_colors.dart';
 
 @RoutePage()
 class Dashboard extends StatefulWidget {
@@ -17,11 +17,11 @@ class _DashboardState extends State<Dashboard> {
   Widget build(BuildContext context) {
     return AutoTabsRouter(
       routes: const [
-        HomeRoute(),
-        HomeRoute(),
         FavouriteRoute(),
-        HomeRoute(),
-        HomeRoute(),
+        FavouriteRoute(),
+        FavouriteRoute(),
+        FavouriteRoute(),
+        FavouriteRoute(),
       ],
       transitionBuilder: (context, child, animation) => FadeTransition(
         opacity: animation,
@@ -33,8 +33,8 @@ class _DashboardState extends State<Dashboard> {
           body: child,
           bottomNavigationBar: BottomNavigationBar(
               elevation: 2,
-              type: BottomNavigationBarType.shifting,
-              currentIndex: tabRouter.activeIndex,
+              type: BottomNavigationBarType.fixed,
+              currentIndex: 2,
               selectedItemColor: AppColors.hotPink,
               unselectedItemColor: AppColors.black.withOpacity(0.7),
               onTap: (value) {

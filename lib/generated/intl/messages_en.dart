@@ -22,48 +22,70 @@ class MessageLookup extends MessageLookupByLibrary {
 
   final messages = _notInlinedMessages(_notInlinedMessages);
   static Map<String, Function> _notInlinedMessages(_) => <String, Function>{
-        "about": MessageLookupByLibrary.simpleMessage("About"),
-        "alreadyHaveAnAccount":
-            MessageLookupByLibrary.simpleMessage("Already have an account?"),
-        "business": MessageLookupByLibrary.simpleMessage("Business"),
-        "chooseYourFavoriteEvent":
-            MessageLookupByLibrary.simpleMessage("Choose your favorite event"),
-        "chooseYourPhotoProfile":
-            MessageLookupByLibrary.simpleMessage("Choose your photo profile"),
-        "community": MessageLookupByLibrary.simpleMessage("Community"),
-        "createAnAccount":
-            MessageLookupByLibrary.simpleMessage("Create an Account"),
-        "createUsername":
-            MessageLookupByLibrary.simpleMessage("Create username"),
-        "design": MessageLookupByLibrary.simpleMessage("Design"),
-        "dontHaveAnAccount":
-            MessageLookupByLibrary.simpleMessage("Don’t have an account?"),
-        "enterEmail": MessageLookupByLibrary.simpleMessage("Enter email"),
-        "enterPassword": MessageLookupByLibrary.simpleMessage("Enter password"),
-        "enterUsername": MessageLookupByLibrary.simpleMessage("Enter Username"),
-        "familyEducation":
-            MessageLookupByLibrary.simpleMessage("Family & Education"),
-        "fashion": MessageLookupByLibrary.simpleMessage("Fashion"),
-        "filmMedia": MessageLookupByLibrary.simpleMessage("Film & Media"),
-        "findYourFavouriteEventsHere": MessageLookupByLibrary.simpleMessage(
-            "Find your favourite events here"),
-        "findYourNearbyEventHere":
-            MessageLookupByLibrary.simpleMessage("Find your nearby event here"),
-        "finish": MessageLookupByLibrary.simpleMessage("Finish"),
-        "foodDrink": MessageLookupByLibrary.simpleMessage("Food & drink"),
-        "forgotPassword":
+        "allTickets": MessageLookupByLibrary.simpleMessage("All Tickets"),
+        "buttonFinish": MessageLookupByLibrary.simpleMessage("Finish"),
+        "buttonForgotPassword":
             MessageLookupByLibrary.simpleMessage("Forgot Password ?"),
-        "gaming": MessageLookupByLibrary.simpleMessage("Gaming"),
+        "buttonJoin": MessageLookupByLibrary.simpleMessage("Join"),
+        "buttonLogin": MessageLookupByLibrary.simpleMessage("Login"),
+        "buttonNext": MessageLookupByLibrary.simpleMessage("Next"),
+        "buttonOrder": MessageLookupByLibrary.simpleMessage("Order"),
+        "buttonSeeAll": MessageLookupByLibrary.simpleMessage("See All"),
+        "buttonSignup": MessageLookupByLibrary.simpleMessage("Signup"),
+        "eventDetailAbout": MessageLookupByLibrary.simpleMessage("About"),
+        "favoriteFavorite": MessageLookupByLibrary.simpleMessage("Favorite"),
+        "fees": MessageLookupByLibrary.simpleMessage("Fees"),
         "getPersonalizedEventRecomendation":
             MessageLookupByLibrary.simpleMessage(
                 "Get personalized event recomendation."),
-        "health": MessageLookupByLibrary.simpleMessage("Health"),
-        "holiday": MessageLookupByLibrary.simpleMessage("Holiday"),
-        "homeLifestyle":
+        "homeLocation": MessageLookupByLibrary.simpleMessage("Location"),
+        "homePopularNow": MessageLookupByLibrary.simpleMessage("Popular Now"),
+        "homeRecommendationsForYou":
+            MessageLookupByLibrary.simpleMessage("Recommendations for you"),
+        "homeSearch": MessageLookupByLibrary.simpleMessage("Search"),
+        "homeUpcomingEvents":
+            MessageLookupByLibrary.simpleMessage("Upcoming Events"),
+        "introBusiness": MessageLookupByLibrary.simpleMessage("Business"),
+        "introChooseYourFavoriteEvent":
+            MessageLookupByLibrary.simpleMessage("Choose your favorite event"),
+        "introChooseYourPhotoProfile":
+            MessageLookupByLibrary.simpleMessage("Choose your photo profile"),
+        "introCommunity": MessageLookupByLibrary.simpleMessage("Community"),
+        "introCreateUsername":
+            MessageLookupByLibrary.simpleMessage("Create username"),
+        "introDesign": MessageLookupByLibrary.simpleMessage("Design"),
+        "introFamilyEducation":
+            MessageLookupByLibrary.simpleMessage("Family & Education"),
+        "introFashion": MessageLookupByLibrary.simpleMessage("Fashion"),
+        "introFilmMedia": MessageLookupByLibrary.simpleMessage("Film & Media"),
+        "introFoodDrink": MessageLookupByLibrary.simpleMessage("Food & drink"),
+        "introGaming": MessageLookupByLibrary.simpleMessage("Gaming"),
+        "introHealth": MessageLookupByLibrary.simpleMessage("Health"),
+        "introHoliday": MessageLookupByLibrary.simpleMessage("Holiday"),
+        "introHomeLifestyle":
             MessageLookupByLibrary.simpleMessage("Home & Lifestyle"),
-        "join": MessageLookupByLibrary.simpleMessage("Join"),
-        "location": MessageLookupByLibrary.simpleMessage("Location"),
-        "login": MessageLookupByLibrary.simpleMessage("Login"),
+        "introMusicEntertaiment":
+            MessageLookupByLibrary.simpleMessage("Music & Entertaiment"),
+        "introPhotoProfileCanBeChangedAtAnyTime":
+            MessageLookupByLibrary.simpleMessage(
+                "Photo profile can be changed at any time"),
+        "introSchoolEducation":
+            MessageLookupByLibrary.simpleMessage("School & Education"),
+        "introScienceTech":
+            MessageLookupByLibrary.simpleMessage("Science & Tech"),
+        "introSport": MessageLookupByLibrary.simpleMessage("Sport"),
+        "introTravel": MessageLookupByLibrary.simpleMessage("Travel"),
+        "introUsernameCanBeChangedAtAnyTime":
+            MessageLookupByLibrary.simpleMessage(
+                "Username can be changed at any time"),
+        "loginDontHaveAnAccount":
+            MessageLookupByLibrary.simpleMessage("Don’t have an account?"),
+        "loginOr": MessageLookupByLibrary.simpleMessage("OR"),
+        "loginUseCredentialsToAceesYourAccount":
+            MessageLookupByLibrary.simpleMessage(
+                "Use Credentials to acees your account"),
+        "loginWelcomeBack":
+            MessageLookupByLibrary.simpleMessage("Welcome Back!"),
         "loginWithFacebook":
             MessageLookupByLibrary.simpleMessage("Login with Facebook"),
         "loginWithGoogle":
@@ -71,41 +93,35 @@ class MessageLookup extends MessageLookupByLibrary {
         "loremIpsumDolorSitAmetConsecteturAdipiscingElit":
             MessageLookupByLibrary.simpleMessage(
                 "Lorem ipsum dolor sit amet, consectetur adipiscing elit."),
-        "musicEntertaiment":
-            MessageLookupByLibrary.simpleMessage("Music & Entertaiment"),
-        "next": MessageLookupByLibrary.simpleMessage("Next"),
-        "or": MessageLookupByLibrary.simpleMessage("OR"),
-        "order": MessageLookupByLibrary.simpleMessage("Order"),
-        "photoProfileCanBeChangedAtAnyTime":
+        "onboardingFindYourFavouriteEventsHere":
             MessageLookupByLibrary.simpleMessage(
-                "Photo profile can be changed at any time"),
-        "pleaseFillThisDetailToCreateAnAccount":
+                "Find your favourite events here"),
+        "onboardingFindYourNearbyEventHere":
+            MessageLookupByLibrary.simpleMessage("Find your nearby event here"),
+        "onboardingUpdateYourUpcomingEventHere":
+            MessageLookupByLibrary.simpleMessage(
+                "Update your upcoming event here"),
+        "orderDetail": MessageLookupByLibrary.simpleMessage("Order Detail"),
+        "orderSummary": MessageLookupByLibrary.simpleMessage("Order Summary"),
+        "paymentMethod": MessageLookupByLibrary.simpleMessage("Payment method"),
+        "signUpAlreadyHaveAnAccount":
+            MessageLookupByLibrary.simpleMessage("Already have an account?"),
+        "signUpCreateAnAccount":
+            MessageLookupByLibrary.simpleMessage("Create an Account"),
+        "signUpPleaseFillThisDetailToCreateAnAccount":
             MessageLookupByLibrary.simpleMessage(
                 "Please fill this detail to create an account"),
-        "popularNow": MessageLookupByLibrary.simpleMessage("Popular Now"),
-        "recommendationsForYou":
-            MessageLookupByLibrary.simpleMessage("Recommendations for you"),
-        "schoolEducation":
-            MessageLookupByLibrary.simpleMessage("School & Education"),
-        "scienceTech": MessageLookupByLibrary.simpleMessage("Science & Tech"),
-        "search": MessageLookupByLibrary.simpleMessage("Search"),
-        "seeAll": MessageLookupByLibrary.simpleMessage("See All"),
         "signUpWithFacebool":
             MessageLookupByLibrary.simpleMessage("Sign up with Facebool"),
         "signUpWithGoogle":
             MessageLookupByLibrary.simpleMessage("Sign up with Google"),
-        "signup": MessageLookupByLibrary.simpleMessage("Signup"),
-        "sport": MessageLookupByLibrary.simpleMessage("Sport"),
-        "travel": MessageLookupByLibrary.simpleMessage("Travel"),
-        "upcomingEvents":
-            MessageLookupByLibrary.simpleMessage("Upcoming Events"),
-        "updateYourUpcomingEventHere": MessageLookupByLibrary.simpleMessage(
-            "Update your upcoming event here"),
-        "useCredentialsToAceesYourAccount":
-            MessageLookupByLibrary.simpleMessage(
-                "Use Credentials to acees your account"),
-        "usernameCanBeChangedAtAnyTime": MessageLookupByLibrary.simpleMessage(
-            "Username can be changed at any time"),
-        "welcomeBack": MessageLookupByLibrary.simpleMessage("Welcome Back!")
+        "subtotal": MessageLookupByLibrary.simpleMessage("Subtotal"),
+        "textFieldEnterEmail":
+            MessageLookupByLibrary.simpleMessage("Enter email"),
+        "textFieldEnterPassword":
+            MessageLookupByLibrary.simpleMessage("Enter password"),
+        "textFieldEnterUsername":
+            MessageLookupByLibrary.simpleMessage("Enter Username"),
+        "total": MessageLookupByLibrary.simpleMessage("Total")
       };
 }

@@ -3,7 +3,7 @@ import '../../../generated/l10n.dart';
 import '../../core/config/routes/app_routes.gr.dart';
 import 'widgets/add_photo_btn.dart';
 import 'widgets/event_btn.dart';
-import '../widgets/custom_elevated_btn.dart';
+import '../widgets/cruft_button.dart';
 import '../../core/utils/extensions/extensions.dart';
 import '../../core/utils/models/event.dart';
 import '../../core/utils/resources/resources.dart';
@@ -85,7 +85,7 @@ class _IntroPageState extends State<IntroPage> {
                     itemBuilder: (_, index) => SingleChildScrollView(
                         child: _IntroContent._introContent(context)[index]))),
             const Spacer(),
-            CElevatedButton(
+            CruftButton(
                 onPressed: () {
                   if (_currentStep + 1 ==
                       _IntroContent._introContent(context).length) {
@@ -97,8 +97,9 @@ class _IntroPageState extends State<IntroPage> {
                 },
                 text: _currentStep ==
                         _IntroContent._introContent(context).length - 1
-                    ? S.of(context).finish
-                    : S.of(context).next)
+                    ? S.of(context).buttonFinish
+                    : S.of(context).buttonNext),
+            20.verticalSpace,
           ],
         ),
       )),
@@ -114,13 +115,13 @@ class _IntroContent {
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             Text(
-              S.of(context).createUsername,
+              S.of(context).introCreateUsername,
               style: context.textTheme.titleLarge!
                   .copyWith(color: AppColors.black),
             ),
             _commonVal.verticalSpace,
             Text(
-              S.of(context).photoProfileCanBeChangedAtAnyTime,
+              S.of(context).introPhotoProfileCanBeChangedAtAnyTime,
               style:
                   context.textTheme.bodySmall!.copyWith(color: AppColors.grey),
             ),
@@ -134,7 +135,7 @@ class _IntroContent {
               child: Row(
                 children: [
                   SvgPicture.asset(
-                    Images.icon,
+                    Images.logo,
                     color: AppColors.hotPink.withOpacity(1),
                     height: 30,
                   ),
@@ -159,13 +160,13 @@ class _IntroContent {
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             Text(
-              S.of(context).chooseYourPhotoProfile,
+              S.of(context).introChooseYourPhotoProfile,
               style: context.textTheme.titleLarge!
                   .copyWith(color: AppColors.black),
             ),
             _commonVal.verticalSpace,
             Text(
-              S.of(context).usernameCanBeChangedAtAnyTime,
+              S.of(context).introUsernameCanBeChangedAtAnyTime,
               style:
                   context.textTheme.bodySmall!.copyWith(color: AppColors.grey),
             ),
@@ -221,7 +222,7 @@ class _IntroContent {
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             Text(
-              S.of(context).chooseYourFavoriteEvent,
+              S.of(context).introChooseYourFavoriteEvent,
               style: context.textTheme.titleLarge!
                   .copyWith(color: AppColors.black),
             ),

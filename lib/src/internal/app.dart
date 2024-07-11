@@ -1,5 +1,3 @@
-import 'package:clubcrafter/src/core/utils/constants/app_consts.dart';
-
 import '../../generated/l10n.dart';
 import '../core/config/routes/app_routes.dart';
 import '../core/config/theme/theme.dart';
@@ -16,7 +14,7 @@ class ClubCrafter extends StatefulWidget {
 
 class _ClubCrafterState extends State<ClubCrafter> {
   final _appRouter = AppRouter();
-  final appConsts = AppConsts();
+  
   @override
   Widget build(BuildContext context) {
     return ScreenUtilInit(

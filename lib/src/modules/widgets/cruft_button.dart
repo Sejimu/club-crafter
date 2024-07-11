@@ -3,22 +3,12 @@ import '../../core/config/theme/app_colors.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
-abstract class CratButton extends StatelessWidget {
-  final VoidCallback onPressed;
-  const CratButton({super.key, required this.onPressed});
-
-  @override
-  Widget build(BuildContext context) {
-    return Container();
-  }
-}
-
-class CElevatedButton extends StatelessWidget {
-  final VoidCallback onPressed;
+class CruftButton extends StatelessWidget {
   final String text;
   final double? padding;
-  const CElevatedButton(
-      {super.key, required this.onPressed, required this.text, this.padding});
+  final VoidCallback? onPressed;
+  const CruftButton(
+      {super.key, this.onPressed, required this.text, this.padding});
 
   @override
   Widget build(BuildContext context) {

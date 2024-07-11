@@ -1,5 +1,5 @@
 import '../../../../../generated/l10n.dart';
-import '../../../widgets/custom_elevated_btn.dart';
+import '../../../widgets/cruft_button.dart';
 import '../../../../core/utils/extensions/extensions.dart';
 import '../../../../core/utils/resources/resources.dart';
 import '../../../../core/config/theme/app_colors.dart';
@@ -53,8 +53,8 @@ class UpComingWidget extends StatelessWidget {
                   80.horizontalSpace,
                   SizedBox(
                     width: 60.w,
-                    child: CElevatedButton(
-                        onPressed: () {}, padding: 8, text: S.of(context).join),
+                    child: CruftButton(
+                        onPressed: () {}, padding: 8, text: S.of(context).buttonJoin),
                   )
                 ],
               )

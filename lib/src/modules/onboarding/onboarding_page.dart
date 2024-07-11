@@ -6,7 +6,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_staggered_grid_view/flutter_staggered_grid_view.dart';
 import 'package:clubcrafter/generated/l10n.dart';
-import 'package:clubcrafter/src/modules/widgets/custom_elevated_btn.dart';
+import 'package:clubcrafter/src/modules/widgets/cruft_button.dart';
 import 'package:clubcrafter/src/core/utils/extensions/extensions.dart';
 import 'package:clubcrafter/src/core/utils/resources/resources.dart';
 
@@ -67,7 +67,7 @@ class _OnboardingPageState extends State<OnboardingPage> {
                   ),
                   34.verticalSpace,
                   Text(
-                    S.of(context).findYourFavouriteEventsHere,
+                    S.of(context).onboardingFindYourFavouriteEventsHere,
                     style: context.textTheme.titleLarge,
                     textAlign: TextAlign.center,
                   ),
@@ -107,7 +107,7 @@ class _OnboardingPageState extends State<OnboardingPage> {
           56.verticalSpace,
           Padding(
             padding: REdgeInsets.symmetric(horizontal: 20),
-            child: CElevatedButton(
+            child: CruftButton(
               onPressed: () {
                 if (_currentIndex == content.length - 1) {
                   _goToSignIn();
@@ -118,7 +118,7 @@ class _OnboardingPageState extends State<OnboardingPage> {
               },
               text: _currentIndex == content.length - 1
                   ? "Continue"
-                  : S.of(context).next,
+                  : S.of(context).buttonNext,
             ),
           ),
           50.verticalSpace
@@ -170,17 +170,17 @@ class _OnboardingData {
   static List<_OnboardingData> data(BuildContext context) => [
         _OnboardingData(
             img: _imagesOne,
-            title: S.of(context).findYourFavouriteEventsHere,
+            title: S.of(context).onboardingFindYourFavouriteEventsHere,
             bodyText:
                 S.of(context).loremIpsumDolorSitAmetConsecteturAdipiscingElit),
         _OnboardingData(
             img: _imagesTwo,
-            title: S.of(context).findYourNearbyEventHere,
+            title: S.of(context).onboardingFindYourNearbyEventHere,
             bodyText:
                 S.of(context).loremIpsumDolorSitAmetConsecteturAdipiscingElit),
         _OnboardingData(
             img: _imagesThree,
-            title: S.of(context).updateYourUpcomingEventHere,
+            title: S.of(context).onboardingUpdateYourUpcomingEventHere,
             bodyText:
                 S.of(context).loremIpsumDolorSitAmetConsecteturAdipiscingElit),
       ];

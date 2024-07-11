@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>684249444995-gvsoggg1rqeoimvp0937noisgsee28ft.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.684249444995-gvsoggg1rqeoimvp0937noisgsee28ft</string>
+	<key>API_KEY</key>
+	<string>AIzaSyAYMTWC_pjRiTDR7Owo6-MYalLomol2SQo</string>
+	<key>GCM_SENDER_ID</key>
+	<string>684249444995</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.example.clubcrafter</string>
+	<key>PROJECT_ID</key>
+	<string>service-bee11</string>
+	<key>STORAGE_BUCKET</key>
+	<string>service-bee11.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:684249444995:ios:45a1d0692d9c4b9bef61b6</string>
+</dict>
+</plist>
