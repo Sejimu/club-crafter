@@ -59,5 +59,6 @@
   "fees": "Fees",
   "subtotal": "Subtotal",
   "total": "Total",
-  "paymentMethod": "Payment method"
+  "paymentMethod": "Payment method",
+  "favoriteFavorite": "Favorite"
 }

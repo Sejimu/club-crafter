@@ -1,11 +1,11 @@
 import '../../core/utils/extensions/extensions.dart';
 import 'package:flutter/material.dart';
 
-class CTextBtn extends StatelessWidget {
+class CruftTextButton extends StatelessWidget {
   final VoidCallback onPressed;
   final Color textColor;
   final String text;
-  const CTextBtn(
+  const CruftTextButton(
       {super.key,
       required this.onPressed,
       required this.text,

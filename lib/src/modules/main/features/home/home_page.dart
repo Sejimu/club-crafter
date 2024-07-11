@@ -6,7 +6,7 @@ import '../widgets/recom_widget.dart';
 import '../widgets/search_home_field.dart';
 import '../widgets/upcoming_event_widget.dart';
 import '../../../intro/widgets/event_btn.dart';
-import '../../../widgets/custom_text_button.dart';
+import '../../../widgets/cruft_text_button.dart';
 import '../../../../core/utils/extensions/extensions.dart';
 import '../../../../core/utils/models/event.dart';
 import '../../../../core/config/theme/app_colors.dart';
@@ -107,7 +107,7 @@ class _HomePageState extends State<HomePage> {
               child: Column(
                 children: [
                   SizedBox(
-                      height: 60.h,
+                      height: context.height * 0.2,
                       width: context.width - 40,
                       child: ListView.separated(
                         itemCount: Events.getEvent(context).length,
@@ -130,7 +130,7 @@ class _HomePageState extends State<HomePage> {
                               .copyWith(color: AppColors.black),
                         ),
                       ),
-                      CTextBtn(
+                      CruftTextButton(
                           onPressed: () {},
                           text: S.of(context).buttonSeeAll,
                           textColor: AppColors.hotPink)
@@ -164,7 +164,7 @@ class _HomePageState extends State<HomePage> {
                               .copyWith(color: AppColors.black),
                         ),
                       ),
-                      CTextBtn(
+                      CruftTextButton(
                           onPressed: () {},
                           text: S.of(context).buttonSeeAll,
                           textColor: AppColors.hotPink)
@@ -191,7 +191,7 @@ class _HomePageState extends State<HomePage> {
                               .copyWith(color: AppColors.black),
                         ),
                       ),
-                      CTextBtn(
+                      CruftTextButton(
                           onPressed: () {
                             context.router.push(const FavouriteRoute());
                           },

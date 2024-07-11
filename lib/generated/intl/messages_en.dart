@@ -33,6 +33,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "buttonSeeAll": MessageLookupByLibrary.simpleMessage("See All"),
         "buttonSignup": MessageLookupByLibrary.simpleMessage("Signup"),
         "eventDetailAbout": MessageLookupByLibrary.simpleMessage("About"),
+        "favoriteFavorite": MessageLookupByLibrary.simpleMessage("Favorite"),
         "fees": MessageLookupByLibrary.simpleMessage("Fees"),
         "getPersonalizedEventRecomendation":
             MessageLookupByLibrary.simpleMessage(

@@ -3,8 +3,8 @@ import '../../../../../generated/l10n.dart';
 import '../../../../core/config/routes/app_routes.gr.dart';
 import '../widgets/custom_text_form_field.dart';
 import '../widgets/transparent_elevated_btn.dart';
-import '../../../widgets/custom_elevated_btn.dart';
-import '../../../widgets/custom_text_button.dart';
+import '../../../widgets/cruft_button.dart';
+import '../../../widgets/cruft_text_button.dart';
 import '../../../../core/utils/extensions/extensions.dart';
 import '../../../../core/utils/resources/resources.dart';
 import '../../../../core/config/theme/app_colors.dart';
@@ -82,14 +82,14 @@ class _SignInPageState extends State<SignInPage> {
             ),
             Align(
               alignment: Alignment.centerRight,
-              child: CTextBtn(
+              child: CruftTextButton(
                 onPressed: () {},
                 text: S.of(context).buttonForgotPassword,
                 textColor: AppColors.black,
               ),
             ),
             30.verticalSpace,
-            CElevatedButton(
+            CruftButton(
                 onPressed: () {
                   _goToIntro();
                 },
@@ -142,7 +142,7 @@ class _SignInPageState extends State<SignInPage> {
                   style: context.textTheme.bodySmall!
                       .copyWith(color: AppColors.black),
                 ),
-                CTextBtn(
+                CruftTextButton(
                     onPressed: () {
                       _goToSignUp();
                     },

@@ -3,7 +3,7 @@ import '../../../generated/l10n.dart';
 import '../../core/config/routes/app_routes.gr.dart';
 import 'widgets/add_photo_btn.dart';
 import 'widgets/event_btn.dart';
-import '../widgets/custom_elevated_btn.dart';
+import '../widgets/cruft_button.dart';
 import '../../core/utils/extensions/extensions.dart';
 import '../../core/utils/models/event.dart';
 import '../../core/utils/resources/resources.dart';
@@ -85,7 +85,7 @@ class _IntroPageState extends State<IntroPage> {
                     itemBuilder: (_, index) => SingleChildScrollView(
                         child: _IntroContent._introContent(context)[index]))),
             const Spacer(),
-            CElevatedButton(
+            CruftButton(
                 onPressed: () {
                   if (_currentStep + 1 ==
                       _IntroContent._introContent(context).length) {

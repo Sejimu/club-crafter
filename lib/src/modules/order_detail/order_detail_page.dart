@@ -4,7 +4,7 @@ import 'package:clubcrafter/src/core/config/theme/app_colors.dart';
 import 'package:clubcrafter/src/core/config/theme/app_text_styles.dart';
 import 'package:clubcrafter/src/core/utils/constants/app_consts.dart';
 import 'package:clubcrafter/src/core/utils/resources/resources.dart';
-import 'package:clubcrafter/src/modules/widgets/custom_icon_button.dart';
+import 'package:clubcrafter/src/modules/widgets/cruft_icon_button.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
@@ -21,7 +21,7 @@ class OrderDetailPage extends StatelessWidget {
           S.of(context).orderDetail,
           style: AppTextStyles.s16w700Poppins.copyWith(color: AppColors.black),
         ),
-        leading: CIconButton(onPressed: () {}, icon: Icons.arrow_back),
+        leading: CruftIconButton(onPressed: () {}, icon: Icons.arrow_back),
         leadingWidth: 16.w,
       ),
       body: Padding(

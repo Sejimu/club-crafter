@@ -3,8 +3,8 @@ import '../../../../../generated/l10n.dart';
 import '../../../../core/config/routes/app_routes.gr.dart';
 import '../widgets/custom_text_form_field.dart';
 import '../widgets/transparent_elevated_btn.dart';
-import '../../../widgets/custom_elevated_btn.dart';
-import '../../../widgets/custom_text_button.dart';
+import '../../../widgets/cruft_button.dart';
+import '../../../widgets/cruft_text_button.dart';
 import '../../../../core/utils/extensions/extensions.dart';
 import '../../../../core/utils/resources/resources.dart';
 import '../../../../core/config/theme/app_colors.dart';
@@ -95,7 +95,7 @@ class _SignUpPageState extends State<SignUpPage> {
                 isVisible: true,
               ),
               30.verticalSpace,
-              CElevatedButton(onPressed: () {}, text: S.of(context).buttonSignup),
+              CruftButton(onPressed: () {}, text: S.of(context).buttonSignup),
               10.verticalSpace,
               Row(
                 children: [
@@ -144,7 +144,7 @@ class _SignUpPageState extends State<SignUpPage> {
                     style: context.textTheme.bodySmall!
                         .copyWith(color: AppColors.black),
                   ),
-                  CTextBtn(
+                  CruftTextButton(
                       onPressed: () {
                         _goToSignIn();
                       },

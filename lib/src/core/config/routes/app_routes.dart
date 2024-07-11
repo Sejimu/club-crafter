@@ -6,7 +6,7 @@ class AppRouter extends $AppRouter {
   @override
   List<AutoRoute> get routes => [
         // Dashboard
-        CustomRoute(page: Dashboard.page, children: [
+        CustomRoute(page: Dashboard.page, initial: true, children: [
           CustomRoute(
             page: HomeRoute.page,
             transitionsBuilder: TransitionsBuilders.fadeIn,
@@ -25,7 +25,6 @@ class AppRouter extends $AppRouter {
             transitionsBuilder: TransitionsBuilders.noTransition),
         CustomRoute(
             page: SignInRoute.page,
-            initial: true, 
             transitionsBuilder: TransitionsBuilders.fadeIn),
         CustomRoute(
             page: SignUpRoute.page,

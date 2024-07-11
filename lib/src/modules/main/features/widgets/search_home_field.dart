@@ -1,5 +1,5 @@
 import '../../../../../generated/l10n.dart';
-import '../../../widgets/custom_icon_button.dart';
+import '../../../widgets/cruft_icon_button.dart';
 import '../../../../core/utils/extensions/extensions.dart';
 import '../../../../core/config/theme/app_colors.dart';
 import 'package:flutter/material.dart';
@@ -30,7 +30,7 @@ class SearchHomeField extends StatelessWidget {
               size: 25.h,
             ),
           ),
-          suffixIcon: CIconButton(
+          suffixIcon: CruftIconButton(
             onPressed: () {},
             icon: Icons.sort_sharp,
           ),

@@ -50,19 +50,21 @@ class DefaultFirebaseOptions {
   }
 
   static const FirebaseOptions android = FirebaseOptions(
-    apiKey: 'AIzaSyAAc-Ms6iG5E3XCLM8MCTWNQHSTP_R_Jzc',
-    appId: '1:503272445903:android:71143c2ef8f34a1eb1e4ba',
-    messagingSenderId: '503272445903',
-    projectId: 'club-crafter',
-    storageBucket: 'club-crafter.appspot.com',
+    apiKey: 'AIzaSyAPL2YqUSbJRKWUwlHYyBqtPMOKcN2Cs3g',
+    appId: '1:684249444995:android:714dc0198a208035ef61b6',
+    messagingSenderId: '684249444995',
+    projectId: 'service-bee11',
+    storageBucket: 'service-bee11.appspot.com',
   );
 
   static const FirebaseOptions ios = FirebaseOptions(
-    apiKey: 'AIzaSyBSm725ocUoKP4LX7h8Qt8WAezXta5iumQ',
-    appId: '1:503272445903:ios:8e1d90079ff43d71b1e4ba',
-    messagingSenderId: '503272445903',
-    projectId: 'club-crafter',
-    storageBucket: 'club-crafter.appspot.com',
+    apiKey: 'AIzaSyAYMTWC_pjRiTDR7Owo6-MYalLomol2SQo',
+    appId: '1:684249444995:ios:45a1d0692d9c4b9bef61b6',
+    messagingSenderId: '684249444995',
+    projectId: 'service-bee11',
+    storageBucket: 'service-bee11.appspot.com',
+    iosClientId: '684249444995-gvsoggg1rqeoimvp0937noisgsee28ft.apps.googleusercontent.com',
     iosBundleId: 'com.example.clubcrafter',
   );
+
 }

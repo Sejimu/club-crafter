@@ -1,7 +1,7 @@
 import 'package:auto_route/auto_route.dart';
 import '../../../generated/l10n.dart';
-import '../widgets/custom_elevated_btn.dart';
-import '../widgets/custom_icon_button.dart';
+import '../widgets/cruft_button.dart';
+import '../widgets/cruft_icon_button.dart';
 import '../../core/utils/extensions/extensions.dart';
 import '../../core/utils/resources/resources.dart';
 import '../../core/config/theme/app_colors.dart';
@@ -32,13 +32,13 @@ class EventDetailPage extends StatelessWidget {
                     top: 50,
                     child: Row(
                       children: [
-                        CIconButton(
+                        CruftIconButton(
                           onPressed: () {},
                           icon: Icons.arrow_back,
                           color: AppColors.white,
                         ),
                         280.horizontalSpace,
-                        CIconButton(
+                        CruftIconButton(
                           onPressed: () {},
                           icon: Icons.favorite,
                           color: AppColors.white,
@@ -97,7 +97,7 @@ class EventDetailPage extends StatelessWidget {
                           .copyWith(color: AppColors.black),
                     ),
                     80.verticalSpace,
-                    CElevatedButton(onPressed: () {}, text: S.of(context).buttonOrder)
+                    CruftButton(onPressed: () {}, text: S.of(context).buttonOrder)
                   ],
                 ),
               )

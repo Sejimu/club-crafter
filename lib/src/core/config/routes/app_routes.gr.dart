@@ -25,7 +25,7 @@ import 'package:clubcrafter/src/modules/main/features/tickets/presentation/all_t
 import 'package:clubcrafter/src/modules/onboarding/onboarding_page.dart' as _i7;
 import 'package:clubcrafter/src/modules/order_detail/order_detail_page.dart'
     as _i8;
-import 'package:clubcrafter/src/modules/widgets/%D1%81ustom_bottom_nav.dart'
+import 'package:clubcrafter/src/modules/main/features/bottom_navbar/%D1%81ustom_bottom_nav.dart'
     as _i2;
 
 abstract class $AppRouter extends _i11.RootStackRouter {

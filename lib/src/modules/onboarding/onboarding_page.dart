@@ -6,7 +6,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_staggered_grid_view/flutter_staggered_grid_view.dart';
 import 'package:clubcrafter/generated/l10n.dart';
-import 'package:clubcrafter/src/modules/widgets/custom_elevated_btn.dart';
+import 'package:clubcrafter/src/modules/widgets/cruft_button.dart';
 import 'package:clubcrafter/src/core/utils/extensions/extensions.dart';
 import 'package:clubcrafter/src/core/utils/resources/resources.dart';
 
@@ -107,7 +107,7 @@ class _OnboardingPageState extends State<OnboardingPage> {
           56.verticalSpace,
           Padding(
             padding: REdgeInsets.symmetric(horizontal: 20),
-            child: CElevatedButton(
+            child: CruftButton(
               onPressed: () {
                 if (_currentIndex == content.length - 1) {
                   _goToSignIn();
