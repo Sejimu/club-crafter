@@ -19,7 +19,7 @@ class CruftIconButton extends StatelessWidget {
         icon: Icon(
           icon,
           color: color ?? AppColors.black,
-          size: 25.h,
+          size: 24.h,
         ));
   }
 }
